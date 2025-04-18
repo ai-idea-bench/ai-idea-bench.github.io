@@ -374,8 +374,9 @@ section[id] {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
     color: #333;
-    white-space: pre-wrap;
+    white-space: pre;
     line-height: 1.5;
+
 }
 
 /* Additional Content */
