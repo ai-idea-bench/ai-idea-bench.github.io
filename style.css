@@ -1,0 +1,452 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2c7ad3 0%, #298cd8 50%, #7db9e8 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 0;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #ffd24c;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC107;
+}
+
+/* Adjust padding to accommodate fixed navbar */
+body {
+    padding-top: 60px;
+}
+
+/* Add some padding to sections to prevent navbar overlap */
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo a {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links li {
+        margin-left: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Project Info Section */
+.project-info {
+    flex: 1;
+    padding: 2rem;
+    min-width: 300px;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffd966;
+    margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+    color: #ffd966;
+    max-width: 90%;
+}
+
+/* Key Points */
+.key-points {
+    margin-bottom: 2.5rem;
+}
+
+.point {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.icon-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.icon-container i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.point-content {
+    flex: 1;
+}
+
+.point-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.point-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Resource Links */
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.resource-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.resource-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.resource-button i {
+    margin-right: 0.5rem;
+}
+
+/* Feature Image */
+.feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-width: 300px;
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 修复图片样式 */
+.image-placeholder img {
+    border-radius: 15px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Author Section Wrapper */
+.author-section-wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Author Section */
+.author-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: 1rem;
+    min-width: 200px;
+}
+
+.section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.section p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Content Sections Styles - Blog Style */
+.content-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0;
+    scroll-margin-top: 70px;
+}
+
+/* 确保所有部分都有顶部margin以避免被navbar覆盖 */
+#data-curation, #evaluation-framework, #experiments, #conclusion, #bibtex {
+    scroll-margin-top: 70px;
+}
+
+.section-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    width: 100%;
+    color: #333;
+}
+
+.figure-container {
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rounded-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.figure-caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    max-width: 90%;
+}
+
+.subsection-title {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: #333;
+}
+
+.text-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+/* Contribution List */
+.contribution-list {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contribution-list li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* BibTeX Container */
+.bibtex-container {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.bibtex-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+/* Additional Content */
+.additional-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .author-section {
+        flex-direction: column;
+    }
+    
+    .project-title {
+        font-size: 2.5rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .subsection-title {
+        font-size: 1.2rem;
+    }
+
+    .content-section {
+        padding: 0 1rem;
+    }
+
+    .section-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Optional: Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Author section links styling */
+.author-section a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.author-section a:hover {
+    color: #ffc273;
+    text-decoration: underline;
+}

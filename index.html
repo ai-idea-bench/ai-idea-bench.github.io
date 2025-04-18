@@ -1,147 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>AI Idea Bench 2025</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
-    <meta name="description"
-          content="AI Idea Bench 2025: AI Research Idea Generation Benchmark">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AI Idea Bench 2025: AI Research Idea Generation Benchmark</title>
-
-    <!-- <link rel="icon" href="./static/images/logo.png"> -->
-
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
-    <script src="https://kit.fontawesome.com/fff5b27ec1.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
-  </head>
-  <body>
-
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title is-bold">
-                <!-- <img src="static/images/logo.png" style="width:1.5em;vertical-align: middle" alt="Logo"/> -->
-                <span class="mmmu" style="vertical-align: middle">AI Idea Bench 2025:</span>
-              </h1>
-              <h2 class="subtitle is-3 publication-subtitle">
-                 AI Research Idea Generation Benchmark
-              </h2>
-              <div class="is-size-5 publication-authors">
-                <span class="author-block">Yansheng Qiu,</span>
-                <span class="author-block">Haoquan Zhang,</span>
-                <span class="author-block">Zhaopan Xu,</span>
-                <span class="author-block">Ming Li,</span>
-                <span class="author-block">Diping Song,</span>
-                <span class="author-block">Zheng Wang†,</span>
-                <span class="author-block">Kaipeng Zhang†,</span>
-              </div>
-
-              <br>
-              <div class="is-size-5 publication-authors">
-<!--                <span class="author-block">*Equal Contribution</span><br>-->
-                <span class="author-block">†Corresponding Author</span>
-                <!-- <span class="author-block"><a href="mailto:zhangkaipeng@pjlab.org.cn">zhangkaipeng@pjlab.org.cn</a></span> -->
-              </div>
-
-              <div class="column has-text-centered">
-                <div class="publication-links">
-                  <span class="link-block">
-                    <a href="" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>arXiv</span>
-                    </a>
-                  </span>
-                  <span class="link-block">
-                    <a href="" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
-                  <span class="link-block">
-                    <a href="" class="external-link button is-normal is-rounded is-dark">
-                      <span>Dataset</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI IDea Bench 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // 确保页面加载时滚动到顶部
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</head>
+<body id="top">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#top">AI IDea Bench 2025</a>
             </div>
-          </div>
+            <ul class="nav-links">
+                <li><a href="#data-curation">Data Construction</a></li>
+                <li><a href="#evaluation-framework">Evaluation Framework</a></li>
+                <li><a href="#experiments">Experiments</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#bibtex">Bibtex</a></li>
+            </ul>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <section class="hero teaser">
-      <div class="container is-max-desktop has-text-centered">
-        <img src="static/images/ideabench.drawio-2.svg" alt="data_construction">
-        <br>
-        <p align="center" style="font-size:18px">
-          We present <strong>AI Idea Bench 2025</strong>, a framework designed to quantitatively evaluate and compare the ideas generated by LLMs within the domain of AI research from diverse perspectives. The framework comprises a comprehensive dataset of 3,495 AI papers and their associated inspired works, along with a robust evaluation methodology. This evaluation system gauges idea quality in two dimensions: alignment with the ground-truth content of the original papers and judgment based on general reference material. AI Idea Bench 2025’s benchmarking system stands to be an invaluable resource for assessing and comparing idea-generation techniques, thereby facilitating the automation of scientific discovery.
-        </p>
-              </div>
-    </section>
-
-    <section class="section">
-      <div class="container" style="margin-bottom: 2vh;">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">🔔News</h2>
-            <div class="content has-text-justified">
-              <p>
-                <b>✨[04/2025] We release our paper and project page. The data and codes will be openly available soon!</b>
-              </p>
-          </div>
-          </div>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Section: Project Title and Info -->
+        <div class="project-info">
+            <h1 class="project-title">AI IDea Bench 2025</h1>
+            <h2 class="project-subtitle">AI Research Idea Generation Benchmark</h2>
+            
+            <!-- Key Points with Icons -->
+            <div class="key-points" id="key-points">
+                <div class="point">
+                    <div class="icon-container">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="point-content">
+                        <h3>Benchmark</h3>
+                        <p>We construct the AI Idea Bench 2025 dataset, comprising 3,495 influential target papers in AI-related conferences along with their corresponding motivating papers, to systematically evaluate the effectiveness of idea generation methods.</p>
+                    </div>
+                </div>
+                
+                <div class="point">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="point-content">
+                        <h3>Evaluation Framework</h3>
+                        <p>We propose an evaluation framework that aligns generated research ideas with the content of ground-truth papers, while simultaneously assessing their merits and drawbacks based on other reference material.</p>
+                    </div>
+                </div>
+                
+                <div class="point">
+                    <div class="icon-container">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="point-content">
+                        <h3>Comprehensive Experiments</h3>
+                        <p>We conducted comprehensive experiments to showcase the effectiveness of various idea generation methods in producing innovative research ideas in AI domain, leveraging our dataset and evaluation framework.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resource Links -->
+            <div class="resource-links" id="resources">
+                <a href="#" class="resource-button">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
+                <a href="#" class="resource-button">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+                <a href="#" class="resource-button">
+                    <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" class="resource-button">
+                    <i class="fas fa-database"></i> Dataset
+                </a>
+            </div>
+        </div>
+        
+        <!-- Right Section: Feature Image -->
+        <div class="feature-image">
+            <div class="image-placeholder">
+                <img src="images/icon.jpg" alt="AI Idea Bench 2025">
+            </div>
         </div>
     </div>
-    </section>
-
     
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title is-3 has-text-centered">BibTeX</h2>
-        <pre><code>
-@article{qiu2025AI Idea,
-  title={AI Idea Bench 2025: AI Research Idea Generation Benchmark},
-  author={Yansheng Qiu and Haoquan Zhang and Zhaopan Xu and Ming Li and Diping Song and Zheng Wang and Kaipeng Zhang},
-  year={2025}
-}
-    </code></pre>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This website is website adapted from <a href="https://mmt-bench.github.io/#examples">MMT-Bench</a>, <a href="https://mmmu-benchmark.github.io/">MMMU</a>, <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
-                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-              Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-          </div>
+    <!-- Author Information -->
+    <div class="author-section-wrapper">
+        <div class="author-section" id="team">
+            <div class="section">
+                <h3>Authors</h3>
+                <p>
+                    Yansheng Qiu<sup>1</sup>, 
+                    <a href="https://haoquanzhang.github.io">Haoquan Zhang</a><sup>2</sup>, 
+                    <a href="https://scholar.google.com.hk/citations?user=qNWDwOcAAAAJ&hl=zh-CN">Zhaopan Xu</a><sup>3</sup>, 
+                    Ming Li<sup>2</sup>, 
+                    Diping Song<sup>2</sup>,
+                    <a href="https://wangzwhu.github.io/home/">Zheng Wang</a><sup>1*</sup>, 
+                    <a href="https://kpzhang93.github.io">Kaipeng Zhang</a><sup>2*</sup>
+                </p>
+                <p><small>* Equal Corresponding authors</small></p>
+            </div>
+            
+            <div class="section">
+                <h3>Affiliations</h3>
+                <p><sup>1</sup> Wuhan University</p>
+                <p><sup>2</sup> Shanghai Artificial Intelligence Laboratory</p>
+                <p><sup>3</sup> Harbin Institute of Technology</p>
+            </div>
+            
+            <div class="section">
+                <h3>Date</h3>
+                <p>April 18<sup>th</sup>, 2025</p>
+            </div>
         </div>
-      </div>
+    </div>
+    
+    <!-- Data Construction Section -->
+    <div class="content-section" id="data-curation">
+        <!-- <div class="section-container">
+            <h2 class="section-title">Data Construction</h2>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>We present a comprehensive approach to constructing the AI Idea Bench 2025 dataset, designed to enable systematic evaluation of research idea generation methods.</p>
+                    
+                    <h3 class="subsection-title">Dataset Collection</h3>
+                    <p>Our dataset collection pipeline involves identifying influential papers from top AI conferences (NeurIPS, ICML, ICLR, ACL, CVPR, etc.) published between 2015-2025. We carefully trace each paper's citation graph to identify motivating papers that influenced the research direction.</p>
+                    
+                    <h3 class="subsection-title">Dataset Unification</h3>
+                    <p>To ensure consistency, we standardize the format of all collected papers, extract key information including abstracts, methodologies, and contributions. We develop a unified semantic representation framework to facilitate analysis across different AI subdomains.</p>
+                    
+                    <h3 class="subsection-title">Quality Assurance</h3>
+                    <p>Our human-in-the-loop quality review process ensures high data quality by filtering out incomplete or misannotated entries. Expert annotators verify the relationships between target and motivating papers to confirm genuine intellectual connections.</p>
+                </div>
+                <div class="figure-container">
+                    <img src="images/placeholder-data.jpg" alt="Data Construction Pipeline" class="rounded-image">
+                    <p class="figure-caption">Figure 1: Overview of our data construction pipeline including collection, unification and quality assurance processes.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    
+    <!-- Evaluation Framework Section -->
+    <div class="content-section" id="evaluation-framework">
+        <div class="section-container">
+            <h2 class="section-title">Evaluation Framework</h2>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>We introduce a novel evaluation framework for assessing the quality and relevance of AI research ideas based on historical patterns of scientific development.</p>
+                </div>
+                <div class="figure-container">
+                    <img src="images/ideabench.drawio-4.svg" alt="Evaluation Framework" class="rounded-image">
+                    <p class="figure-caption">Figure 2: <strong>Overall pipeline of AI Idea Bench 2025.</strong> First, we decompose and summarize the motivation, experimental steps, topic, and the inspiration papers from the target paper. Then, we extract the motivation and experimental steps from the inspiration papers, and generate a cluster of ideas in combination with the topic of the target paper. Finally, we compare the idea-generation methods in six evaluations: idea multiple-choice evaluation, idea-to-idea matching, idea-to-topic matching, idea competition among baselines, novelty assessment, and feasibility assessment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Experiments Section -->
+    <div class="content-section" id="experiments">
+        <!-- <div class="section-container">
+            <h2 class="section-title">Experiments</h2>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>We conducted comprehensive experiments to evaluate various idea generation methods using our benchmark dataset and evaluation framework.</p>
+                    
+                    <h3 class="subsection-title">Experimental Setup</h3>
+                    <p>We benchmark 15 different idea generation methods across diverse model families. For proprietary models, we consider models like GPT-4o and Claude 3. For open-source models, we evaluate models from various research institutions and companies. All evaluations are conducted in zero-shot settings with consistent prompting.</p>
+                    
+                    <h3 class="subsection-title">Performance Metrics</h3>
+                    <p>We evaluate performance using multiple metrics including Idea Alignment Score (IAS), Novelty Index (NI), and Feasibility Rating (FR). We also introduce a composite Research Idea Quality (RIQ) score that balances these dimensions to provide an overall assessment.</p>
+                    
+                    <h3 class="subsection-title">Results Analysis</h3>
+                    <p>Our experimental results reveal significant variations in idea generation capabilities across different models and methods. We identify key factors that contribute to effective research idea generation and analyze failure cases to understand current limitations.</p>
+                </div>
+                <div class="figure-container">
+                    <img src="images/placeholder-results.jpg" alt="Experimental Results" class="rounded-image">
+                    <p class="figure-caption">Figure 3: Performance comparison of different idea generation methods across our evaluation metrics.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- Conclusion Section -->
+    <div class="content-section" id="conclusion">
+        <!-- <div class="section-container">
+            <h2 class="section-title">Conclusion</h2>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>Our work introduces AI Idea Bench 2025, a benchmark for evaluating AI research idea generation capabilities, along with a comprehensive evaluation framework and experimental analysis.</p>
+                    
+                    <h3 class="subsection-title">Key Contributions</h3>
+                    <ul class="contribution-list">
+                        <li>A large-scale dataset capturing the evolution of research ideas in AI from motivating papers to influential publications</li>
+                        <li>A multi-faceted evaluation framework that assesses alignment, novelty, and feasibility of generated research ideas</li>
+                        <li>Extensive experiments revealing the strengths and limitations of current idea generation methods</li>
+                        <li>Insights into how AI can augment the scientific discovery process in research communities</li>
+                    </ul>
+                    
+                    <h3 class="subsection-title">Future Work</h3>
+                    <p>Building on this foundation, future work could explore interactive idea refinement systems, domain-specific idea generation methods, and integration with automated experimentation frameworks to accelerate scientific discovery cycles in AI research.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- BibTeX Section -->
+    <div class="content-section" id="bibtex">
+        <div class="section-container">
+            <h2 class="section-title">BibTeX</h2>
+            <div class="section-content">
+                <div class="bibtex-container">
+                    <pre class="bibtex-code">
+@inproceedings{qiu2025aideabench,
+    title={AI Idea Bench 2025: A Benchmark for Evaluating AI Research Idea Generation},
+    author={Qiu, Yansheng and Zhang, Haoquan and Xu, Zhaopan and Li, Ming and Song, Diping and Wang, Zheng and Zhang, Kaipeng},
+    booktitle={Proceedings of the 39th Conference on Neural Information Processing Systems},
+    year={2025},
+    url={https://example.com/paper}
+}                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <!-- Add footer content here if needed -->
     </footer>
-
-  </body>
+</body>
 </html>
