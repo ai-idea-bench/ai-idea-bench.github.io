@@ -370,13 +370,18 @@ section[id] {
     margin: 1.5rem 0;
 }
 
-.bibtex-code {
+
+
+.bibtex-code code {
     font-family: 'Courier New', Courier, monospace;
+    display: block;
     font-size: 0.9rem;
     color: #333;
     white-space: pre;
     line-height: 1.5;
-
+    margin: 0;
+    tab-size: 4;
+    counter-reset: line;
 }
 
 /* Additional Content */
